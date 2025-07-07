@@ -64,6 +64,7 @@ def create_accounts():
 # ... place you code here to LIST accounts ...
 # In routes.py
 @app.route("/accounts", methods=["GET"])
+
 def list_accounts():
     """
     List all Accounts
