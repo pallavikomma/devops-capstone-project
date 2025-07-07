@@ -64,9 +64,7 @@ def create_accounts():
 # ... place you code here to LIST accounts ...
 # In routes.py
 
-######################################################################
-# LIST ALL ACCOUNTS
-######################################################################
+
 @app.route("/accounts", methods=["GET"])
 def list_accounts():
     """
@@ -84,9 +82,6 @@ def list_accounts():
 ######################################################################
 
 # ... place you code here to READ an account ...
-######################################################################
-# READ AN ACCOUNT
-######################################################################
 @app.route("/accounts/<int:account_id>", methods=["GET"])
 def read_account(account_id):
     """
@@ -104,13 +99,6 @@ def read_account(account_id):
 ######################################################################
 
 # ... place you code here to UPDATE an account ...
-from flask import request, abort
-from service.models import Account
-from service.common import status
-
-######################################################################
-# UPDATE AN EXISTING ACCOUNT
-######################################################################
 @app.route("/accounts/<int:account_id>", methods=["PUT"])
 def update_accounts(account_id):
     """
